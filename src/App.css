@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding:0;
+  font-family: sans-serif;
+}
+
+.nav {
+  color:white;
+  width: 100vw;
+  min-height:65px;
+  background-color: rgb(51, 47, 86);
+  box-shadow: 0px -7px 10px 12px black;
+  position:relative;
+}
+
+.logo {
+  height:65px;
+}
+
+.qm {
+  margin-left: 10px;
+  height:20px;
+  width:20px;
+}
+
+.nav ul li,.myAcc{
+  font-weight: bold;
+  font-size:14px;
+  float: right;
+  list-style: none;
+  height:64px;
+  padding:20px 10px;
+}
+
+.nav ul li a, .myAcc {
+  cursor: pointer;
+}
+
+.myAcc {
+  border-left: 1px solid navy;
+  padding-left: 30px;
+  color:rgb(142,127,169);
+}
+.myAcc:hover {
+  background-color: rgb(32, 29, 65);
+}
+
+.downCarrot {
+  height:15px;
+  width:15px;
+  margin-left: 10px;
+}
+
+.nav li:nth-child(1) a:hover {
+  text-decoration: none;
+}
+
+.nav li:nth-child(2) a:hover,
+.nav li:nth-child(3) a:hover {
+  text-decoration: underline;
+}
+
+.input-box {
+  margin:5px auto;
+  height:45px;
+}
+
+.input-box input {
+  width:450px;
+  height:35px;
+}
+
+.login {
+  background-color: #eee;
+  position: absolute;
+  right:8.25%;
+  top:60px;
+  height:50px;
+  border-bottom-left-radius:3px; 
+  border-bottom-right-radius:3px;
+  padding:10px 0;
+  z-index: 999;
+}
+
+.login a {
+  font-size:80%;
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+.loginWrapper:hover {
+  background-color: rgb(220, 241, 220);
+  text-decoration: underline;
+}
+
+.info {
+  background-color: rgb(68,62,111);
+  width:100wh;
+  min-height: 150px;
+  margin:0;
+}
+
+.top {
+  height:100px;
+  margin: 2px;
+}
+
+.directory {
+  margin-top:15px;
+  height:25px;
+}
+
+.companyLabel {
+  font-size:140%;
+  color:white;
+  font-weight: 100;
+}
+
+.t1 a {
+  font-size:70%;
+  cursor: pointer;
+}
+
+.t1 li {
+  float: left;
+  color:white;
+  list-style: none;
+}
+
+.t1 li span {
+  font-size: 80%;
+}
+
+.t2 p {
+  color:white;
+  font-size:70%;
+  width:20px;
+  float:right;
+  margin:40px 100px 0 30px;
+  line-height: 15px;
+}
+
+.t2 p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bottom {
+  height:50px;
+  padding-left:5px;
+}
+
+.rate {
+  color:white;
+  font-size:80%;
+}
+
