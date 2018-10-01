@@ -1,18 +1,20 @@
 import React, { Component } from 'react'
+import {connect} from 'react-redux';
 
 import Stars from './Stars';
+import { toggleFilter } from '../reducers/actionCreators';
 
-export default class Filter extends Component {
+class Filter extends Component {
   render() {
     return (
-      <div>
+      <div className='filter'>
         <strong className='filter-name'>{this.props.filterName}</strong>
 
         {this.props.filterContent.map((e,index) => {
             return (
-            <p className='filter-description'> 
+            <div key={index} className='filter-description'> 
                 <a>
-                <input style={{marginRight:"4px"}}type='checkbox' />
+                <input checked={this.props.filters.indexOf(e.description) !== -1 ? true : false} onChange={() => this.props.toggleFilter(e.description)}style={{marginRight:"4px"}}type='checkbox' />
 
                 {this.props.filterName !== 'Overall Rating' 
                 ?
@@ -21,7 +23,7 @@ export default class Filter extends Component {
                 <span style={{fontSize:'18px'}}> <Stars rate={e.description} /> </span>
                 }
                 <span>({e.rateNumber})</span></a>
-            </p> 
+            </div> 
             )   
         })}
 
@@ -29,3 +31,11 @@ export default class Filter extends Component {
     )
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    filters: state.filters
+  }
+}
+
+export default connect(mapStateToProps, {toggleFilter})(Filter);

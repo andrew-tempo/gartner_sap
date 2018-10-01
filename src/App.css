@@ -191,7 +191,7 @@
 
 .front-stars {
   display: inline-flex;
-  color: #FFBC0B;
+  color: rgb(248, 207, 72);
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -240,12 +240,16 @@
 
 /*  Filter card style start from here* */
 
+.filter {
+  margin-top:15px;
+}
+
 .filter-card {
-  margin: 80px 10px;
+  margin: 80px 25px 15px 25px;
   box-sizing: border-box;
-  padding: 20px;
+  padding-left: 20px;
   background-color: white;
-  box-shadow: 1px 1px 1px #999;
+  border:1px solid lightgrey;
   min-height: 100vh; 
 }
 
@@ -256,10 +260,139 @@
 
 .filter-description {
   font-size:70%;
-  line-height:19px;
+  line-height:30px;
 }
 
 .filter-description a {
+  cursor: pointer;
+}
+
+.show-button {
+  font-size: 70%;
+  color:navy;
+}
+
+.show-button:hover {
+  cursor: pointer;
+}
+
+.compare-card {
+  margin: 80px 25px 10px 25px;
+  box-sizing: border-box;
+  background-color: rgb(55,59,99);
+  min-height: 350px; 
+  color:white;
+  padding-bottom: 20px;
+  border:1px solid lightgray;
+}
+
+.compare-item a{
+  font-size:70%;
+}
+
+.compare-item {
+  padding:10px 20px;
+}
+
+.compare-item:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 0px 0px grey, 0px -1px 0px 0px grey;
+  /* background-image: url(https://www.gartner.com/reviews/img/icons/list-arrowhead-normal.png;wabe6b7b6f9e013e31); */
+}
+
+.arrow-left {
+  font-size:120%;
+  color:grey;
+  margin-left: 120px;
+  font-weight: bold;
+}
+
+.sort-row {
+  padding-top:30px;
+  font-size:70%;
+  height:80px;
+}
+
+.email-button {
+  color:navy;
+}
+.email-button:hover {
+  cursor: pointer;
+}
+.sort-button {
+  color:black;
+  margin-left: 80px;
+}
+
+.filter-bar {
+  font-size:70%;
+  display:inline-block;
+  padding: 5px 15px;
+  margin:3px 3px;
+  background-color:rgb(73,76,129);
+  border-radius: 25px;
+  color:white;
+  height:35px;
+}
+
+.filter-bar:last-child {
+  margin-bottom:20px;
+}
+
+.result-page {
+  padding: 0 25px 0 0;
+}
+
+.result-card {
+  background-color: white;
+  min-height:200px;
+  border: 1px solid lightgrey;
+  margin-bottom: 30px;
+  padding-top:30px;
+}
+.product-name {
+  font-size:90%;
+  font-weight: bolder;
+}
+
+.small-font {
+  font-size: 70%;
+}
+
+.medium-font {
+  font-size: 80%;
+}
+
+.grey-font {
+  color:grey;
+}
+
+.review-src-btn {
+  padding:10px;
+  border:1px solid lightgrey;
+  border-radius: 1px;
+  width:130px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.review-src-btn:hover {
+  cursor: pointer;
+}
+
+.article-box {
+  min-height:150px;
+  background: -webkit-linear-gradient(#000,#111,#ddd, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.navy-font {
+  color: rgb(63, 89, 170);
+  font-weight:bold;
+}
+.navy-font:hover {
+  text-decoration: underline;
   cursor: pointer;
 }
 
