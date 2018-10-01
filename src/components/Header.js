@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Nav from './Nav';
 import Info from './Info';
 import Login from './Login';
-
+import PageContainer from './PageContainer';
 
 export default class Header extends Component {
 
@@ -30,7 +30,9 @@ hideAccount = () => {
 
         <Info hideAccount={this.hideAccount}/>
 
-        
+        <PageContainer />
+
+
       </div>
     )
   }

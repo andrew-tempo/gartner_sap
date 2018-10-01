@@ -10,7 +10,9 @@
   min-height:65px;
   background-color: rgb(51, 47, 86);
   box-shadow: 0px -3px 8px 8px #222;
-  position:relative;
+  z-index:999;
+  position:sticky;
+  top:0;
 }
 
 .logo {
@@ -178,7 +180,6 @@
 .star-rating {
   display: inline-flex;
   align-items: center;
-  font-size: 23px;
   justify-content: center;
 }
 
@@ -229,6 +230,37 @@
 
 .thick-bottom-border {
   border-bottom: 8px solid white;
+}
+
+.page-container {
+  min-height:1500px;
+  background-color: rgb(240,240,240);
+}
+
+
+/*  Filter card style start from here* */
+
+.filter-card {
+  margin: 80px 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 1px #999;
+  min-height: 100vh; 
+}
+
+.filter-name {
+  font-size: 70%;
+  margin:15px 0 10px 0;
+}
+
+.filter-description {
+  font-size:70%;
+  line-height:19px;
+}
+
+.filter-description a {
+  cursor: pointer;
 }
 
 
