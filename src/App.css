@@ -9,12 +9,16 @@
   width: 100vw;
   min-height:65px;
   background-color: rgb(51, 47, 86);
-  box-shadow: 0px -7px 10px 12px black;
+  box-shadow: 0px -3px 8px 8px #222;
   position:relative;
 }
 
 .logo {
   height:65px;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 .qm {
@@ -94,7 +98,7 @@
 }
 
 .info {
-  background-color: rgb(68,62,111);
+  background-color: rgb(62, 73, 111);
   width:100wh;
   min-height: 150px;
   margin:0;
@@ -147,11 +151,86 @@
 
 .bottom {
   height:50px;
-  padding-left:5px;
 }
 
 .rate {
-  color:white;
-  font-size:80%;
+  border-right: 2px solid white;
+  display: inline;
 }
+
+.rateChar {
+  color:white;
+  font-size:70%;
+  margin-right: 10px;
+}
+
+.rateNumber {
+  font-size: 70%;
+  color: white;
+  margin-left:20px;
+}
+
+.star-wrapper {
+  display: inline-block;
+  padding-top:2px;
+}
+
+.star-rating {
+  display: inline-flex;
+  align-items: center;
+  font-size: 23px;
+  justify-content: center;
+}
+
+.back-stars {
+  display: inline-flex;
+  color: lightgrey;
+  position: relative;
+}
+
+.front-stars {
+  display: inline-flex;
+  color: #FFBC0B;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.compare-button {
+  background:rgb(66,97,194);
+  color:white;
+  font-size:70%;
+  border-radius: 2px;
+  margin-left:20px;
+  padding:5px 8px;
+  length:100px;
+}
+
+.compare-button:hover {
+  background-color: rgb(45,74,163)
+}
+
+.checkbox {
+  margin:0 10px;
+  padding-top:20px;
+}
+
+.user-options {
+  box-sizing: border-box;
+  color:white;
+  font-size: 68%;
+  display: inline-block;
+  margin-top:10px;
+  width:100px;
+  height:40px;
+  padding:0 5px;
+  cursor: pointer;
+}
+
+.thick-bottom-border {
+  border-bottom: 8px solid white;
+}
+
+
+
 

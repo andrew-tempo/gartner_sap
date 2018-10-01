@@ -1,13 +1,20 @@
 import React, { Component } from 'react'
 import Rate from './Rate';
+import UserOptions from './UserOptions';
 
 export default class Info extends Component {
 
 state = {
   directories:['All markets','SAP Application Services, Worldwide'],
   company:'SAP',
-  rate:4.2,
-  ratings:52
+  rate:4.4,
+  ratings:52,
+  userOptions:['User Reviews','User Ratings','Alternatives'],
+  selectedOption: 0
+}
+
+toggleOptionClass = (index) => {
+  this.setState({selectedOption: index})
 }
 
   render() {
@@ -22,9 +29,9 @@ state = {
             <ul className='directory'>
             {this.state.directories.map((e,index) => {
               if(index === 0) 
-                  return <li><a>{e}</a></li>
+                  return <li key={index}><a>{e}</a></li>
               else 
-                  return <li>&nbsp;<span>></span>&nbsp;<a>{e}</a></li>
+                  return <li key={index}>&nbsp;<span>></span>&nbsp;<a>{e}</a></li>
             })}
             </ul>
             <div className='companyLabel'>{this.state.company}</div>  
@@ -38,9 +45,29 @@ state = {
 
 
         <div className='bottom row'>
-            <Rate 
-              rate={this.state.rate}
-              ratings={this.state.ratings} />
+            <div className='col-md-8' >
+                <Rate 
+                  rate={this.state.rate}
+                  ratings={this.state.ratings} 
+                />
+                <button className="btn compare-button">Compare this Vendor</button>
+                <a href='/'>
+                  <input type='checkbox' className='checkbox'/>
+                  <span style={{color:'white',fontSize:'80%'}}>I use their products</span>
+                </a>    
+            </div>
+
+            <div className='col-md-4'>
+            {this.state.userOptions.map((e,index) => {
+              if(index === this.state.selectedOption)
+                return <UserOptions key={index} changeOption={() =>this.toggleOptionClass(index)} selected={true} name={e} />
+              else
+                return <UserOptions key={index} changeOption={() => this.toggleOptionClass(index)} name={e} />
+            })}
+              
+            </div>
+
+
         </div>
 
       </div>
