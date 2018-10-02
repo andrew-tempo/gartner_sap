@@ -7,14 +7,18 @@ class ResultPage extends Component {
 
 
   render() {
+    console.log(this.props);
     return (
       <div className='result-page'>
-        {this.props.results.map((e,index) => 
+        {this.props.results.length !== 0 ? this.props.results.map((e,index) => 
             <ResultCard 
                 key={index}
                 {...e}
             />
-        )}
+        )
+      :
+          <p>No Results</p>
+    }
       </div>
     )
   }

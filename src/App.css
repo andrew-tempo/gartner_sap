@@ -234,10 +234,11 @@
 
 .page-container {
   min-height:1500px;
-  background-color: rgb(240,240,240);
 }
 
-
+.page-wrapper {
+  background-color: rgb(240,240,240);
+}
 /*  Filter card style start from here* */
 
 .filter {
@@ -339,6 +340,10 @@
   margin-bottom:20px;
 }
 
+.filter-bar:hover {
+  cursor: pointer;
+}
+
 .result-page {
   padding: 0 25px 0 0;
 }
@@ -395,6 +400,16 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+
+/* ** *********** add media query ***********/
+
+@media only screen and (min-width:971px) {
+  .page-container {
+    margin: 0 100px;
+  }
+}
+
 
 
 

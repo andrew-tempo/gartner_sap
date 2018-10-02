@@ -14,7 +14,14 @@ class Filter extends Component {
             return (
             <div key={index} className='filter-description'> 
                 <a>
-                <input checked={this.props.filters.indexOf(e.description) !== -1 ? true : false} onChange={() => this.props.toggleFilter(e.description)}style={{marginRight:"4px"}}type='checkbox' />
+                <input 
+                  checked={this.props.filters.indexOf(e.description) !== -1 ? true : false} 
+                  onChange={
+                  () => this.props.toggleFilter(e.description)
+                  }
+                  style={{marginRight:"4px"}}
+                  type='checkbox' 
+                />
 
                 {this.props.filterName !== 'Overall Rating' 
                 ?

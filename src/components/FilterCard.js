@@ -111,6 +111,8 @@ state = {
 ReviewFilter = FilterWithToggle(this.state.filters[2].filterName, this.state.filters[2].filterContent);
 ReviewJobRow = FilterWithToggle(this.state.filters[3].filterName, this.state.filters[3].filterContent);
 
+  
+
   render() {
     return (
       <div className='filter-card'>
