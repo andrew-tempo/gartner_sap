@@ -10,6 +10,7 @@ class App extends Component {
       <div className="App">
           <Header />
           <PageContainer />
+        <h1>Some text here</h1>
       </div>
     );
   }
